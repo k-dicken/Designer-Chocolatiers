@@ -1,0 +1,113 @@
+//nav styling
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+
+    #main-nav {
+        min-height: 80px;
+        padding: 5px 40px;
+        background-color: $mc-brown;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        .main-nav-links { 
+            width: 40%;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+    
+            a {
+                font-family: BreadleySans-Regular;
+                font-size: $f-large;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
+            
+            a:hover {
+                color: $mc-gold;
+            }
+        }
+        
+        .logo {
+            width: 110px;
+            height: 56px;
+        }
+    
+        .main-nav-icons {
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+    
+            input {
+                height: 30px;
+                margin-right: 20px;
+                font-family: $text-font;
+                font-size: $f-regular;
+            }
+
+            .icon-shopping-cart {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+    
+    #sub-nav {
+        //nav div styling
+        padding: 10px 20px;
+        background-color: $mc-pink;
+    
+        //nav tagline text styling
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        #main-nav {
+            .main-nav-links {
+                width: fit-content;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            .main-nav-icons {
+                width: fit-content;
+            }
+        }
+    }    
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        #main-nav {
+            justify-content: center;
+            flex-direction: column;
+
+            .main-nav-links {
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 16px;
+                justify-content: center;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            .main-nav-icons {
+                width: 100%;
+                margin-bottom: 16px;
+                justify-content: center;
+            } 
+        }
+    }
+}

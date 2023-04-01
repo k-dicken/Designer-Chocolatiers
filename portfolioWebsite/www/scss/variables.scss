@@ -1,0 +1,33 @@
+//colors
+//*Note: If you change mc-pink, change the svg arrows fill manually
+//main colors
+$mc-black: #000;
+$mc-white: #fff;
+$mc-pink: rgb(236, 47, 126);
+$mc-gold: rgb(224, 185, 100);
+$mc-brown: #472020;
+//secondary colors
+$sc-grey: grey;
+//overlay
+$o-brown: rgba(53,16,16,.6);
+$o-white: rgba(255,255,255,.8);
+
+//fonts
+$text-font: BreadleySans-Regular;
+$header-font: Berose;
+
+//font sizes
+$f-heading: 48px;
+$f-subheading: 32px;
+$f-large: 24px;
+$f-regular: 20px;
+$f-small: 14px;
+
+@media only screen and (max-width: 300px) {
+    //font sizes
+    $f-heading: 36px;
+    $f-subheading: 24px;
+    $f-large: 16px;
+    $f-regular: 12px;
+    $f-small: 10px;
+}

@@ -1,0 +1,26 @@
+#carousel {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    background-color: $mc-brown;
+
+    .carousel-content {
+        min-height: 200px;
+        width: 100%;
+        padding: 80px 60px 40px 60px;
+        clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+        background-color: $o-white;
+        text-align: center;
+
+        .carousel-content-desc {
+            width: 80%;
+        }
+
+        img {
+            height: 20px;
+            margin: 0 40px 0 40px;
+            cursor: pointer;
+        }
+    }
+}
+

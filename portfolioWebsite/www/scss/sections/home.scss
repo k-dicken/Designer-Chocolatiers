@@ -1,0 +1,47 @@
+#home {
+    background-image: linear-gradient($o-brown, $o-brown), url(../img/hero.jpg);
+    background-color: $mc-brown;
+    flex-direction: column;
+    position: relative;
+
+    .home-content {
+        flex-direction: column;
+        color: $mc-white;
+
+        .logo {
+            width: 750 / 2 + px;
+            height: 396 / 2 + px;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: $f-large;
+            margin-bottom: 40px;
+        }
+    }
+    
+    .decor-overflow {
+        height: fit-content;
+        width: fit-content;
+        position: absolute;
+        margin-bottom: -100px;
+        overflow: hidden;
+        bottom: 0;
+        right: 0;
+        z-index: 98;
+
+        .page-decor2 {
+            margin-right: -50px;
+        }
+    }
+
+}
+
+.home-shape {
+    height: 80px;
+    width: 100%;
+    margin-top: -80px;
+    background-color: $mc-brown;
+    clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+}
+

@@ -1,0 +1,21 @@
+footer {
+    height: 50%;
+    background-color: $mc-pink;
+    flex-direction: column;
+    color: white;
+
+    a {
+        color: white;
+        margin: 6px;
+    }
+
+    a:hover {
+        color: $mc-gold;
+    }
+
+    .footer-links {
+        width: 80%;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,72 @@
+#contact {
+    background-color: $mc-brown;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .contact-content {
+        width: 50%;
+        padding: 40px 60px;
+        color: white;
+
+        .contact-title {
+            font-size: $f-heading;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        padding: 40px 60px;
+
+        input {
+            width: 100%;
+            margin-bottom: 40px;
+            color: white;
+            font-family: $text-font;
+            font-size: $f-regular;
+        }
+
+        textarea {
+            width: 100%;
+            margin-bottom: 40px;
+            font-family: $text-font;
+            font-size: $f-regular;
+        }
+
+        button {
+            width: 200px;
+        }
+
+    }   
+}
+
+@media only screen and (max-width: 600px) {
+    #contact {
+        flex-direction: column;
+        justify-content: center;
+
+        .contact-content {
+            text-align: center;
+            width: 100%;
+            
+            .contact-info {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+
+        form {
+            width: 100%;
+
+            input {
+                font-size: $f-small;
+            }
+
+            textarea {
+                font-size: $f-small;
+            }
+        }
+    }
+}

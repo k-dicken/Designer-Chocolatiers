@@ -1,0 +1,103 @@
+//PAGE SETUP
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: red 2px solid;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p{
+    margin-bottom: 16px;
+    font-family: $text-font;
+    font-size: $f-regular;
+}
+
+//FONTS
+@font-face {
+    font-family: $text-font;
+    src: url(fonts/BreadleySans-Regular.ttf);
+}
+
+@font-face {
+    font-family: $header-font;
+    src: url(fonts/Berose.ttf);
+}
+
+
+//GENERAL STYLE CLASSES
+.full {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.reset-margin {
+    margin: 0;
+}
+
+.center-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    border: $mc-pink 5px solid;
+    padding: 10px 20px;
+    color: $mc-pink;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-family: $text-font;
+    font-size: $f-regular;
+}
+
+.button:hover {
+    border: $mc-gold 5px solid;
+    color: $mc-gold;
+}
+
+.image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.logo {
+    width: 750 / 4 + px;
+    height: 396 / 4 + px;
+}
+
+.input {
+    border: none;
+    background-color: transparent;
+    border-bottom: white 2px solid;
+    color: white; 
+    padding: 5px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    h1, 
+    h2, 
+    h3, 
+    h4, 
+    h5, 
+    h6, 
+    p{
+        font-size: $f-small;
+    }
+}

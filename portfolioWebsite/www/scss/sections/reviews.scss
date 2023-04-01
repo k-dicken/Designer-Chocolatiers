@@ -1,0 +1,23 @@
+#reviews {
+    min-height: 35%;
+    padding: 40px 60px;
+    background-color: $mc-pink;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .review {
+        width: 250px;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #reviews {
+        flex-direction: column;
+
+        .review {
+            width: 80%;
+            margin: 20px 0 20px 0;
+        }
+    }
+}

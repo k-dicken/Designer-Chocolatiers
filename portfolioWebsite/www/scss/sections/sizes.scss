@@ -1,0 +1,25 @@
+#sizes {
+    flex-direction: column;
+
+    .sizes-title {
+        font-size: $f-heading;
+    }
+
+    .sizes-info {
+        flex-direction: column;
+
+        .sizes-info-name {
+            font-size: $f-large;
+            margin-bottom: 2px;
+        }
+    }
+
+    img {
+        width: 400px;
+    }
+
+    .size-button {
+        border: $mc-white 5px solid;
+        color: $mc-white;
+    }
+}

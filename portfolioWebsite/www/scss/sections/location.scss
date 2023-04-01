@@ -1,0 +1,101 @@
+#location {
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+
+    .location-content {
+        width: 55%;
+        padding: 40px 60px;
+
+        .location-content-title {
+            font-size: $f-heading;
+        }
+
+        .location-content-desc {
+            margin-bottom: 60px;
+        }
+
+        .location-content-location {
+            margin-bottom: 40px;
+
+            .location-title {
+                font-weight: bold;
+                font-size: $f-large;
+            }
+        }
+    }
+    
+    .location-image {
+        width: 45%;
+        min-height: 100vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: column;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 19% 100%);
+        overflow: visible;
+        background-image: url(../img/map.png);
+        background-color: $mc-brown;
+    }
+
+    .location-image-desc {
+        position: absolute;
+        width: 30%;
+        bottom: 0;
+        right: 0;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        font-size: $f-large;
+        text-align: right;
+        font-weight: bold;
+        color: white;
+        z-index: 2;
+
+        a {
+            color: $mc-gold;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .location-image-side {
+        height: 100px;
+        width: 50%;   
+        position: absolute;     
+        bottom: 0;
+        right: 0;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        background-color: $mc-pink;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    #location {
+        flex-direction: column;
+        text-align: center;
+
+        .location-content {
+            width: 90%;
+        }
+
+        .location-image {
+            min-height: 40vh;
+            width: 100%;
+            clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+        }
+
+        .location-image-desc {
+            width: 60%;
+        }
+
+        .location-image-side {
+            width: 80%;
+        }
+    }
+}

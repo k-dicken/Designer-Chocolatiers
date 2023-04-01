@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Chocolatiers</title>
+    <link rel="stylesheet" href="www/css/styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav id="main-nav">
+            <div class="main-nav-links">
+                <a href="#home">Home</a>
+                <a href="#chocolates">Chocolates</a>
+                <a href="#location">Location</a>
+                <a href="#carousel">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="#home" class="logo reset-margin"><img src="www/img/logo-white.png" alt="Designer Chocolatiers" class="logo"></a>
+            <div class="main-nav-icons">
+                <input class="input" type="text" placeholder="Search...">
+                <a href="#" class="reset-margin"><img  class="icon-shopping-cart" src="www/img/SVG/shopping-cart.svg" alt="Shopping Cart"></a>
+            </div>
+            </div>
+        </nav>
+        <div id="sub-nav" class="center-child">
+            <p class="sub-nav-tagline reset-margin">Get 20% off your next order using code: <span>VDAY2022</span></p>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <div id="home" class="full image center-child section-padding">
+        <div class="home-content center-child">
+            <a href="#home"><img src="www/img/logo-white.png" alt="Designer Chocolatiers" class="logo"></a>
+            <p>Create the perfect gift for them.</p>
+            <a href="#order" class="button link">Get Started</a>
+        </div>
+        <div class="decor-overflow">
+            <img class="page-decor2" src="www/img/home-decor2.svg" alt="">
+        </div>
+
+    </div>  
+     
+    <!-- Triangle Decor on Home Page -->
+    <div class="home-shape"></div>
+
+    <!-- Introduction Section -->
+    <div id="introduction" class="center-child section-padding">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id neque. Purus sit amet luctus venenatis lectus. Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer. Id consectetur purus ut faucibus pulvinar. Nisl suscipit adipiscing bibendum est ultricies integer quis. Arcu risus quis varius quam. Aliquam etiam erat velit scelerisque in dictum non consectetur. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Viverra adipiscing at in tellus integer. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Viverra adipiscing at in tellus integer.</p>
+        <img class="page-decor1" src="www/img/home-decor1.svg" alt="">
+    </div>
+
+    <!-- Reviews Section -->
+    <div id="reviews" class="center-child section-padding">
+        <div class="review">
+            <p class="review-text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, dolore magna aliqua. Metus vulputate eu fermentum leo."
+            </p>
+            <p class="review-name reset-margin">- FIRSTNAME LASTNAME</p>
+            <p class="review-info">NEW YORK, 2021</h2>
+        </div>
+        <div class="review">
+            <p class="review-text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, dolore magna aliqua. Metus vulputate eu fermentum leo."
+            </p>
+            <p class="review-name reset-margin">- FIRSTNAME LASTNAME</p>
+            <p class="review-info">NEW YORK, 2021</h2>
+        </div>
+        <div class="review">
+            <p class="review-text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, dolore magna aliqua. Metus vulputate eu fermentum leo."
+            </p>
+            <p class="review-name reset-margin">- FIRSTNAME LASTNAME</p>
+            <p class="review-info">NEW YORK, 2021</h2>
+        </div>
+    </div>
+
+    <div id="image1" class="image"></div>
+
+    <!-- Order Section -->
+    <div id="order" class="center-child">
+        <a href="#chocolates" class="order-online center-child">
+                <p class="online-title">Order Online</p>
+                <p class="online-desc">Order your own custom box of chocolates from the comfort of your home and have it delivered right to your door.</p>
+        </a>
+
+        <a href="#location" class="order-instore center-child image">
+            <p class="instore-title">Order In-Store</p>
+            <p class="instore-desc">Choose from one of our various locations across the Midwest and have your own custom box of chocolates made in front of your eyes.</p>
+        </a>
+    </div>
+
+    <!-- Chocolates Section -->
+    <div id="chocolates" class="full center-child">
+        <h2 class="chocolates-title">Chocolates</h2>
+        <a href="#" class="chocolates-link">View All</a>
+        <div class="chocolates-selection">
+            <img class="selection-arrow" src="www/img/SVG/arrow-left.svg" alt="left" onclick="chocolateDecrease()">
+
+            <div class="selection-image">
+                <img class="selection-image-chocolate" src="www/img/chocolates/chocolate-1.png" alt="">
+                <div class="selection-circle"></div>
+            </div>
+            
+            <img class="selection-arrow" src="www/img/SVG/arrow-right.svg" alt="right" onclick="chocolateIncrease()">
+        </div>
+        <div class="chocolates-info center-child">
+            <p class="chocolates-info-title">Caramel Nut Blanc</p>
+            <p class="chocolates-info-desc">A chewy caramel with a crispy hazelnut crunch.</p>
+            <div class="chocolates-info-nutrition">
+                <p class="chocolates-info-calories">10 kcal/per</p>
+                <p class="chocolates-info-allergies">Contains Nuts</p>
+            </div>
+            <button class="button">Add to Order</button>
+        </div>
+    </div>
+
+    <div id="image2" class="image"></div>
+
+    <!-- Sizes Section -->
+    <!-- <div id="sizes" class="full center-child">
+        <p class="sizes-title">Sizes</p>
+        <img src="www/img/sizes/size-9.png" alt="Box of 9 Chocolates">
+        <div class="sizes-info center-child">
+            <p class="sizes-info-name">Box of 9</p>
+            <p class="sizes-info-price">$20.99</p>
+        </div>
+        <button class="size-button">Add to Order</button>
+    </div> -->
+
+    <!-- Location Section -->
+    <div id="location" class="full center-child">
+        <div class="location-content">
+            <p class="location-content-title">Visit Us in Store</p>
+            <p class="location-content-desc">Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Viverra adipiscing at in tellus integer. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer. Id consectetur purus ut faucibus pulvinar.</p>
+            <div class="location-content-location">
+                <p class="location-title reset-margin">Indianapolis</p>
+                <p class="location-address">12345 Indianapolis Ave Indianapolis, IN</p>
+            </div>
+            <div class="location-content-location">
+                <p class="location-title reset-margin">Chicago</p>
+                <p class="location-address">12345 Chicago Ave Chicago, IL</p>
+            </div>
+            <div class="location-content-location">
+                <p class="location-title reset-margin">Cincinnati</p>
+                <p class="location-address">12345 Cincinnati Ave Cincinnati, OH</p>
+            </div>
+        </div>
+
+        <div class="location-image image">
+        </div>
+        <p class="location-image-desc">Explore our various locations on 
+            <a class="link" href="https://www.google.com/maps">Google Maps</a></p>
+        <div class="location-image-side">
+        </div>
+
+    </div>
+
+    <!-- Carousel Section -->
+    <div id="carousel" class="full image" style="    background-image: url(www/img/carousel/carousel-1.jpg);">
+        <div class="carousel-content center-child">
+            <img src="www/img/SVG/arrow-left.svg" alt="left arrow" onclick="carouselDecrease()">
+            <p class="carousel-content-desc">Duis ut diam quam nulla porttitor massa id neque. Purus sit amet luctus venenatis lectus. Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer. Id consectetur purus ut faucibus pulvinar. Nisl suscipit adipiscing bibendum est ultricies integer quis.</p>
+            <img src="www/img/SVG/arrow-right.svg" alt="right arrow" onclick="carouselIncrease()">
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="center-child">
+        <p class="about-title">Our Story</p>
+        <p class="about-desc">Lorem ipsum dolor sit amet 1986, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id neque. Purus sit amet luctus venenatis lectus. Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer. Id consectetur purus ut faucibus pulvinar. Nisl suscipit adipiscing bibendum est ultricies integer quis. Arcu risus quis varius quam. Aliquam etiam erat velit scelerisque in dictum non consectetur. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Enim lobortis 2022 scelerisque fermentum dui faucibus in ornare quam viverra. Viverra adipiscing at in tellus integer. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Viverra adipiscing at in tellus integer.</p>
+    </div>
+    
+    <!-- Contact Section -->
+    <div id="contact" class="full center-child">
+        <div class="contact-content">
+            <p class="contact-title">Get In Contact</p>
+            <p class="contact-desc">Have any questions or concerns? Want to inquire about making a custom order with us? Go ahead and get in contact with us through our message form or the information below!</p>
+            <br>
+            <div class="contact-info">
+                <p>support@chocolatiers.co</p>
+                <p>(317) 123-4567</p>
+            </div>
+        </div>
+
+        <form action="">
+            <input class="input" name="name" type="text" placeholder="Your Name...">
+            <input class="input" name="email" type="email" placeholder="Your Email...">
+            <input class="input" name="subject" type="text" placeholder="Your Subject...">
+            <textarea name="message" class="input" cols="30" rows="4" placeholder="Your Message..."></textarea>
+            <button class="submit button">Send</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="center-child">
+        <a href="#home"><img src="www/img/logo-white.png" alt="Designer Chocolatiers" class="logo"></a>
+        <p>support@chocolatiers.co</p>
+        <p>12354 Indiana Ave Indianapolis, Indiana 46032</p>
+        <p>(317) 123-4567</p>
+        
+        <div class="footer-links center-child">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">CCPA</a>
+            <a href="#">Promo</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Accessibility Statement</a>
+        </div>
+
+        <p>©2022 Designer Chocolatiers</p>
+    </footer>
+    <script src="app/app.js"></script>
+</body>
+</html>

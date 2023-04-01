@@ -1,0 +1,68 @@
+#order {
+    height: 50vh;
+    max-height: 50vh;
+    text-align: center;
+
+    .order-online {
+        height: 100%;
+        width: 55%;
+        margin-right: -5%;
+        flex-direction: column;
+        background-color: $mc-pink;
+        padding: 2% 8% 2% 2%;
+        color: white;
+        text-decoration: none;
+        clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+
+        .online-title {
+            font-size: $f-heading;
+        }
+    }
+
+    .order-online:hover {
+        height: 110%;
+    }
+
+    .order-instore {
+        height: 100%;
+        width: 55%;
+        flex-direction: column;
+        margin-left: -5%;
+        padding: 2% 2% 2% 8%;
+        background-image: linear-gradient($o-brown, $o-brown), url(../img/chocolate-shop.jpg);
+        background-color: $mc-brown;
+        color: white;
+        text-decoration: none;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+
+        .instore-title {
+            font-size: $f-heading;
+        }
+    }
+
+    .order-instore:hover {
+        height: 110%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #order {
+        .order-online {
+            .online-title {
+                font-size: $f-subheading;
+            }
+            .online-desc {
+                display: none;
+            }
+        }
+
+        .order-instore {
+            .instore-title {
+                font-size: $f-subheading
+            }
+            .instore-desc {
+                display: none;
+            }
+        }
+    }
+}
